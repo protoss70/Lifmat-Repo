@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Porsche Bot</title>
+	<title>Lifmat AI</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +13,74 @@
 	<link rel="stylesheet" href="https://flowstorm-bot-development.web.app/client-bot.css">
 </head>
 <body style="font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-	
-	<div id="botContainer">
-		<div id="botDiv"></div>
+	<nav>
+		<div class="logo">Lifmat AI</div>
+	</nav>
+
+	<div class="containerCont">
+		<div class="medsContainer">
+			<div class="medItem">
+				<div class="name">Name</div>
+				<div class="compare">Compare</div>
+			</div>
+			<div class="medItem">
+				<div class="name">Tebokan 120 mg, potahované tablety</div>
+				<input type="checkbox" name="compare" id="botC1">
+			</div>
+
+			<div class="medItem">
+				<div class="name">286 mg/g + 190 000 IU/g dentální pasta</div>
+				<input type="checkbox" name="compare" id="botC2">
+			</div>
+
+			<div class="medItem">
+				<div class="name">Čaj z listu senny</div>
+				<input type="checkbox" name="compare" id="botC3">
+			</div>
+
+			<div class="medItem">
+				<div class="name">Yttrium (90Y) colloid suspension for local injection Injekční suspenze</div>
+				<input type="checkbox" name="compare" id="botC4">
+			</div>
+
+			<div class="medItem">
+				<div class="name">PANZYNORM forte-N</div>
+				<input type="checkbox" name="compare" id="botC5">
+			</div>
+
+			<div class="medItem">
+				<div class="name">Enhertu 100 mg</div>
+				<input type="checkbox" name="compare" id="botC6">
+			</div>
+		</div>
+			<button onclick="intro()">Save Selected</button>
+			<div id="searchBarBarBar" class="searchContainer hidden">
+				<input type="text" name="" id="searcher">
+				<button onclick="askQuestion()">Search</button>
+			</div>
+			<div class="botsContainer">
+				<div class="botContainer hidden">
+					<div class="botCor" id="bot1"></div>
+				</div>
+				<div class="botContainer hidden">
+					<div class="botCor" id="bot2"></div>
+				</div>
+				<div class="botContainer hidden">
+					<div class="botCor" id="bot3"></div>
+				</div>
+				<div class="botContainer hidden">
+					<div class="botCor" id="bot4"></div>
+				</div>
+				<div class="botContainer hidden">
+					<div class="botCor" id="bot5"></div>
+				</div>
+				<div class="botContainer hidden">
+					<div class="botCor" id="bot6"></div>
+				</div>
+			</div>
 	</div>
-    <div>
-        <canvas id="cnv"></canvas>
-    </div>
-    <button id="prev">Prev</button>
-    <button id="next">Next</button>
-    <span id="npages">not yet</span>
+
+	
 
 	<script src="https://flowstorm-bot-development.web.app/client-bot.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
